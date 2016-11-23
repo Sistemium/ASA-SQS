@@ -1,0 +1,14 @@
+{
+  "name": "sqs-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "zip  -r ../dist/lambda.zip *; aws lambda update-function-code --zip-file fileb://../dist/lambda.zip  --function-name createSQSMessage"
+  },
+  "author": "Sistemium UAB",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.2"
+  }
+}
